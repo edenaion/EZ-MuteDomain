@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 300px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #1a1a2e;
+      color: #e0e0e0;
+      padding: 16px;
+    }
+    h1 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #fff;
+    }
+    .hint {
+      font-size: 11px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    textarea {
+      width: 100%;
+      height: 180px;
+      padding: 10px;
+      border: 1px solid #2a2a4a;
+      border-radius: 6px;
+      background: #16213e;
+      color: #e0e0e0;
+      font-family: monospace;
+      font-size: 13px;
+      line-height: 1.5;
+      resize: vertical;
+      outline: none;
+    }
+    textarea:focus { border-color: #4a90d9; }
+    textarea::placeholder { color: #555; }
+    .status {
+      font-size: 11px;
+      color: #4a90d9;
+      margin-top: 8px;
+      height: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>EZ-MuteDomain</h1>
+  <p class="hint">One site per line. Just the name, no .com needed.</p>
+  <textarea id="sites" placeholder="google&#10;facebook&#10;tiktok" spellcheck="false"></textarea>
+  <div class="status" id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
